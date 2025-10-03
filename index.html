@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Sahlan - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Sahlan<span>.</span></div>
+      <ul class="nav-links">
+        <li><a href="#" onclick="showPage('home')">Beranda</a></li>
+        <li><a href="#" onclick="showPage('about')">Tentang</a></li>
+        <li><a href="#" onclick="showPage('skills')">Keahlian</a></li>
+        <li><a href="#" onclick="showPage('projects')">Proyek</a></li>
+        <li><a href="#" onclick="showPage('blog')">Blog</a></li>
+        <li><a href="#" onclick="showPage('contact')">Kontak</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- =================== HALAMAN =================== -->
+
+  <!-- BERANDA -->
+  <section id="home" class="page active">
+    <div class="hero">
+      <h1>Halo, Saya <span>Muhammad Sahlan</span></h1>
+      <p>Siswa TKJ • UI/UX Designer • Calon Arsitek</p>
+      <a href="#" onclick="showPage('about')" class="btn">Kenali Saya</a>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="about" class="page">
+    <h2>Tentang Saya</h2>
+    <p>Saya <b>Muhammad Sahlan</b>, siswa SMKN 1 Tanjunganom jurusan TKJ. 
+    Minat saya pada <b>UI/UX</b>, <b>jaringan komputer</b>, dan saya bercita-cita menjadi arsitek. 
+    Website ini menjadi media untuk menunjukkan karya & catatan perjalanan saya.</p>
+    <div class="cards">
+      <div class="card">📚 Pendidikan: SMKN 1 Tanjunganom</div>
+      <div class="card">🎨 Minat: UI/UX, Figma</div>
+      <div class="card">⚡ Hobi: Bulutangkis</div>
+    </div>
+  </section>
+
+  <!-- KEAHLIAN -->
+  <section id="skills" class="page">
+    <h2>Keahlian</h2>
+    <div class="skills-grid">
+      <div class="skill">🎨 UI/UX Design</div>
+      <div class="skill">💻 HTML, CSS, JS</div>
+      <div class="skill">🌐 Networking & Cabling</div>
+      <div class="skill">🖥️ Server (Proxmox, Apache, MariaDB)</div>
+      <div class="skill">📊 Dokumentasi & Presentasi</div>
+    </div>
+  </section>
+
+  <!-- PROYEK -->
+  <section id="projects" class="page">
+    <h2>Proyek</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>🌐 Portfolio Web</h3>
+        <p>Website pribadi modern dengan GitHub Pages.</p>
+      </div>
+      <div class="card">
+        <h3>🔌 Simulasi Jaringan</h3>
+        <p>Membangun topologi dengan OSPF dan routing statis.</p>
+      </div>
+      <div class="card">
+        <h3>📱 Desain Mobile App</h3>
+        <p>Membuat prototipe aplikasi menggunakan Figma.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="page">
+    <h2>Blog</h2>
+    <article class="blog-post">
+      <h3>Pengalaman Belajar Jaringan</h3>
+      <p>Saya belajar OSPF, subnetting, dan routing di lab sekolah. Menarik banget!</p>
+    </article>
+    <article class="blog-post">
+      <h3>UI/UX dan Arsitektur</h3>
+      <p>Desain digital ternyata mirip dengan desain bangunan: harus estetis & fungsional.</p>
+    </article>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="contact" class="page">
+    <h2>Kontak</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Pesan..." required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Muhammad Sahlan | Dibuat dengan ❤</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+              </html>
