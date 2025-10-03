@@ -1,0 +1,13 @@
+// Navigasi antar halaman
+function showPage(pageId) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(p => p.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Responsive menu
+function toggleMenu() {
+  const nav = document.querySelector('.nav-links');
+  nav.style.display = (nav.style.display === "flex") ? "none" : "flex";
+}
